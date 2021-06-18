@@ -1,0 +1,71 @@
+main {
+  height: 234px;
+  overflow: hidden;
+}
+
+.episodes {
+  display: grid;
+  grid-row: 3/3;
+
+  grid-column-gap: 50px;
+  grid-row-gap: 50px;
+
+  width: 419px;
+  height: 930px;
+}
+
+img {
+  display: inline;
+
+  width: 70px;
+  height: 70px;
+
+  border-radius: 4px;
+}
+
+.episode {
+  display: flex;
+
+  margin-left: 25px;
+}
+
+.infoEpisode {
+  display: inline-block;
+  flex-direction: column;
+
+  padding: 0 0 0 14px;
+}
+
+.titleEpisode {
+  width: 311px;
+
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  padding-top: 10px;
+
+  color: #ffffff;
+}
+
+.listEpisode {
+  width: 419px;
+  margin-top: 16px;
+}
+
+.time {
+  width: 153px;
+
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 14px;
+
+  padding-top: 4px;
+
+  color: #ffffff;
+
+  opacity: 0.5;
+}

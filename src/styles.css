@@ -1,13 +1,40 @@
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-    background-color: #244857;
+  background-color: #244857;
 
-    border: 0;
-    margin: 0;
+  border: 0;
+  margin: 0;
 
-    width: 100vw;
-    height: 100vh;
+  width: 100vw;
+  height: 100vh;
+}
+
+.justify-left-items {
+  float: left;
+}
+
+.justify-right-items {
+  float: right;
+}
+
+.container {
+  padding-left: 25px !important;
+  padding-right: 15px !important;
+}
+
+.imgStyle {
+  object-fit: cover;
+  object-position: center;
+}
+
+.mt-5 {
+  margin-top: 24px;
+}
+
+* {
+  font-family: Raleway /* Replace with your custom font */, sans-serif !important;
+  /* Add !important to overwrite all elements */
 }

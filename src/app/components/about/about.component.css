@@ -1,0 +1,17 @@
+.descriptionAbout {
+  width: 369px;
+  height: 70px;
+  /* height: 114px; */
+
+  overflow: hidden;
+
+  font-family: "Raleway";
+  font-style: italic;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+
+  color: rgba(255, 255, 255, 1);
+
+  opacity: 0.5;
+}
