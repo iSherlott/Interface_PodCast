@@ -1,4 +1,6 @@
-import { Component, OnInit } from "@angular/core";
+import { Component, Input, OnInit } from "@angular/core";
+
+import { ApiService } from "src/app/services";
 
 @Component({
   selector: "app-logo",
@@ -6,12 +8,19 @@ import { Component, OnInit } from "@angular/core";
   styleUrls: ["./logo.component.css"],
 })
 export class LogoComponent implements OnInit {
-  public img: string =
-    "https://api-frontend-test.brlogic.com/podcast/cover.jpeg";
-  public title: string = "Podlogic";
-  public episode: number = 6;
+  @Input() public data!: string;
 
-  constructor() {}
+  public cover!: string;
+  public title!: string;
+  public episode!: string;
+
+  constructor(public apiService: ApiService) {
+    this.apiService.dataBase().subscribe((res) => {
+      this.cover = res.cover;
+      this.title = res.name;
+      this.episode = res.episodes.length;
+    });
+  }
 
   ngOnInit(): void {}
 }

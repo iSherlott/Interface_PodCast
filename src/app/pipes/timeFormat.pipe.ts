@@ -1,4 +1,5 @@
 import { Pipe, PipeTransform } from "@angular/core";
+import { connectableObservableDescriptor } from "rxjs/internal/observable/ConnectableObservable";
 
 @Pipe({
   name: "timeFormat",
@@ -9,12 +10,12 @@ export class TimeFormatPipe implements PipeTransform {
     let minutes;
 
     if (data < 60) {
-      seconds = data < 9 ? `00:${data / 60}` : `00:0${data / 60}`;
+      seconds = data < 10 ? `00:0${data}` : `00:${data}`;
 
       return seconds;
     } else {
       seconds = data % 60;
-      seconds = seconds < 9 ? `0${seconds}` : seconds;
+      seconds = seconds < 10 ? `0${seconds}` : seconds;
 
       minutes = data % 60 == 0 ? data : (data - (data % 60)) / 60;
 

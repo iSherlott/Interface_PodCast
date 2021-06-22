@@ -1,1 +1,20 @@
-<p>episodes works!</p>
+<article class="display">
+  <article class="displayEpisode">
+    <section class="cover">
+      <app-cover [cover]="cover"></app-cover>
+    </section>
+    <section class="displayInfo">
+      <app-display-info
+        [episodeNumber]="episodeNumber"
+        [description]="description"
+        [name]="name"
+      ></app-display-info>
+    </section>
+    <button class="btn mt-5">Ler mais</button>
+    <p class="participants">Participantes: {{ participants }}</p>
+  </article>
+  <section class="displayPainel">
+    <app-display [duration]="duration" [audioElement]="song"></app-display>
+  </section>
+  <button class="btnclose" [routerLink]="['/podcast']">X</button>
+</article>

@@ -1,10 +1,4 @@
 body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  background-color: #244857;
-
   border: 0;
   margin: 0;
 
@@ -12,14 +6,23 @@ body {
   height: 100vh;
 }
 
-.justify-left-items {
-  float: left;
-}
+@media (min-width: 768px) {
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-.justify-right-items {
-  float: right;
-}
+    background-color: #244857;
+  }
 
+  .justify-left-items {
+    float: left;
+  }
+
+  .justify-right-items {
+    float: right;
+  }
+}
 .container {
   padding-left: 25px !important;
   padding-right: 15px !important;
@@ -31,10 +34,9 @@ body {
 }
 
 .mt-5 {
-  margin-top: 24px;
+  margin-top: 24px !important;
 }
 
 * {
-  font-family: Raleway /* Replace with your custom font */, sans-serif !important;
-  /* Add !important to overwrite all elements */
+  font-family: Raleway !important;
 }

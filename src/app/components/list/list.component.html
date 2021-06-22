@@ -1,14 +1,16 @@
 <main>
   <p *ngIf="!episodes">Nenhum Episodio para esse autor</p>
   <article *ngFor="let episode of episodes" class="listEpisode">
-    <article class="episode">
-      <img class="imgStyle" [src]="episode.cover" alt="Image of episode" />
-      <section class="infoEpisode">
-        <section class="titleEpisode">
-          Episódio {{ episode.episodeNumber }} - {{ episode.name }}
+    <a href="/episodes/{{ episode.id }}">
+      <article class="episode">
+        <img class="imgStyle" [src]="episode.cover" alt="Image of episode" />
+        <section class="infoEpisode">
+          <section class="titleEpisode">
+            Episódio {{ episode.episodeNumber }} - {{ episode.name }}
+          </section>
+          <section class="time">{{ episode.duration | timeFormat }}</section>
         </section>
-        <section class="time">{{ episode.duration | timeFormat }}</section>
-      </section>
-    </article>
+      </article>
+    </a>
   </article>
 </main>

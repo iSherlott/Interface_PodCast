@@ -1,0 +1,68 @@
+@media (max-width: 767px) {
+  h3 {
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 28px;
+
+    color: rgba(255, 255, 255, 1);
+  }
+
+  .box-text {
+    margin-left: 28px !important;
+    margin-right: 28px !important;
+
+    overflow: hidden;
+  }
+
+  .descriptionEpisode {
+    margin: auto;
+
+    font-family: "PT Sans" !important;
+    font-style: normal;
+    font-weight: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+
+    color: #ffffff;
+
+    opacity: 0.5;
+  }
+}
+
+@media (min-width: 768px) {
+  h3 {
+    width: 380px;
+    height: 56px;
+
+    margin: 0;
+
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 28px;
+
+    color: rgba(255, 255, 255, 1);
+  }
+
+  .box-text {
+    width: 414px;
+    height: 169px;
+
+    overflow: hidden;
+  }
+
+  .descriptionEpisode {
+    font-family: "PT Sans" !important;
+    font-style: normal;
+    font-weight: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+
+    color: rgba(255, 255, 255, 1);
+  }
+}

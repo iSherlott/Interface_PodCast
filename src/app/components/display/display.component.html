@@ -1,0 +1,29 @@
+<article>
+  <section class="displayInfoController">
+    {{ currentTime | timeFormat }}
+    <progress
+      type="range"
+      value="{{ currentTime }}"
+      max="{{ duration }}"
+    ></progress>
+    {{ duration | timeFormat }}
+  </section>
+
+  <section class="displayController">
+    <button class="btn segundary">
+      <img src="./assets/display/previous.png" class="setPlay2" />
+    </button>
+    <button *ngIf="!play" (click)="statusPlay()" class="btn primary mx-1">
+      <img
+        src="./assets/display/botao-play-ponta-de-seta.png"
+        class="setPlay"
+      />
+    </button>
+    <button *ngIf="play" (click)="pause()" class="btn primary mx-1">
+      <img src="./assets/display/pausa.png" class="setPlay" />
+    </button>
+    <button class="btn segundary mx-1">
+      <img src="./assets/display/next.png" class="setPlay2" />
+    </button>
+  </section>
+</article>

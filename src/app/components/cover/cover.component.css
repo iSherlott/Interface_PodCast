@@ -1,0 +1,14 @@
+@media (max-width: 767px) {
+  .coverStyle {
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  .coverStyle {
+    width: 250px;
+    height: 250px;
+
+    border-radius: 4px;
+  }
+}

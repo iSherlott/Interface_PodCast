@@ -1,71 +1,164 @@
-main {
-  height: 234px;
-  overflow: hidden;
+@media (max-width: 767px) {
+  main {
+    height: 100%;
+    background-color: #27657f;
+  }
+
+  .episodes {
+    display: grid;
+    grid-row: 3/3;
+
+    grid-column-gap: 50px;
+    grid-row-gap: 50px;
+
+    height: 930px;
+  }
+
+  .episodes {
+    display: grid;
+    grid-row: 3/3;
+
+    grid-column-gap: 50px;
+    grid-row-gap: 50px;
+
+    height: 930px;
+  }
+
+  img {
+    display: inline;
+
+    width: 70px;
+    height: 70px;
+
+    border-radius: 4px;
+  }
+
+  .episode {
+    display: flex;
+
+    margin-left: 25px;
+  }
+
+  .infoEpisode {
+    display: inline-block;
+    flex-direction: column;
+
+    padding: 0 0 0 14px;
+  }
+
+  .titleEpisode {
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    padding-top: 10px;
+
+    color: #ffffff;
+  }
+
+  .listEpisode a {
+    text-decoration: none;
+  }
+
+  .listEpisode {
+    width: 100%;
+    margin-top: 16px;
+  }
+
+  .time {
+    width: 153px;
+
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 14px;
+
+    padding-top: 4px;
+
+    color: #ffffff;
+
+    opacity: 0.5;
+  }
 }
+@media (min-width: 768px) {
+  main {
+    height: 234px;
+    overflow: auto;
+  }
+  main::-webkit-scrollbar {
+    display: none;
+  }
 
-.episodes {
-  display: grid;
-  grid-row: 3/3;
+  .episodes {
+    display: grid;
+    grid-row: 3/3;
 
-  grid-column-gap: 50px;
-  grid-row-gap: 50px;
+    grid-column-gap: 50px;
+    grid-row-gap: 50px;
 
-  width: 419px;
-  height: 930px;
-}
+    width: 419px;
+    height: 930px;
+  }
 
-img {
-  display: inline;
+  img {
+    display: inline;
 
-  width: 70px;
-  height: 70px;
+    width: 70px;
+    height: 70px;
 
-  border-radius: 4px;
-}
+    border-radius: 4px;
+  }
 
-.episode {
-  display: flex;
+  .episode {
+    display: flex;
 
-  margin-left: 25px;
-}
+    margin-left: 25px;
+  }
 
-.infoEpisode {
-  display: inline-block;
-  flex-direction: column;
+  .infoEpisode {
+    display: inline-block;
+    flex-direction: column;
 
-  padding: 0 0 0 14px;
-}
+    padding: 0 0 0 14px;
+  }
 
-.titleEpisode {
-  width: 311px;
+  .titleEpisode {
+    width: 311px;
 
-  font-family: "Raleway";
-  font-style: normal;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 16px;
-  padding-top: 10px;
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    padding-top: 10px;
 
-  color: #ffffff;
-}
+    color: #ffffff;
+  }
 
-.listEpisode {
-  width: 419px;
-  margin-top: 16px;
-}
+  .listEpisode a {
+    text-decoration: none;
+  }
 
-.time {
-  width: 153px;
+  .listEpisode {
+    width: 419px;
+    margin-top: 16px;
+  }
 
-  font-family: "Raleway";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 14px;
+  .time {
+    width: 153px;
 
-  padding-top: 4px;
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 14px;
 
-  color: #ffffff;
+    padding-top: 4px;
 
-  opacity: 0.5;
+    color: #ffffff;
+
+    opacity: 0.5;
+  }
 }

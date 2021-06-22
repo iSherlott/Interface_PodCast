@@ -1,0 +1,141 @@
+@media (max-width: 767px) {
+  .btn {
+    border-radius: 100%;
+    border: none;
+  }
+
+  .primary {
+    width: 60px;
+    height: 60px;
+
+    background: #329ecb;
+  }
+
+  .segundary {
+    width: 42px;
+    height: 42px;
+
+    background: #ffffff;
+  }
+
+  .displayInfoController {
+    width: 100%;
+
+    height: 19px;
+
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+
+    text-align: center;
+
+    color: #ffffff;
+
+    opacity: 0.5;
+  }
+
+  progress {
+    width: 70%;
+  }
+
+  .displayController {
+    margin-top: 24px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .mx-1 {
+    margin-left: 16px;
+  }
+
+  .setPlay {
+    width: 20px;
+    height: 22px;
+
+    margin: auto;
+
+    color: #ffffff;
+  }
+
+  .setPlay2 {
+    width: 9.31px;
+    height: 11.82px;
+
+    margin: auto;
+
+    color: #329ecb;
+  }
+}
+
+@media (min-width: 768px) {
+  .btn {
+    border-radius: 100%;
+    border: none;
+  }
+
+  .primary {
+    width: 60px;
+    height: 60px;
+
+    background: #329ecb;
+  }
+
+  .segundary {
+    width: 42px;
+    height: 42px;
+
+    background: #ffffff;
+  }
+
+  .displayInfoController {
+    float: left;
+
+    height: 19px;
+
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+
+    color: #ffffff;
+
+    opacity: 0.5;
+
+    margin: 45px 0 44px 24px;
+  }
+
+  progress {
+    width: 416px;
+  }
+
+  .displayController {
+    float: right;
+
+    margin: 24px 24px 33px 0;
+  }
+
+  .mx-1 {
+    margin-left: 16px;
+  }
+
+  .setPlay {
+    width: 20px;
+    height: 22px;
+
+    margin: auto;
+
+    color: #ffffff;
+  }
+
+  .setPlay2 {
+    width: 9.31px;
+    height: 11.82px;
+
+    margin: auto;
+
+    color: #329ecb;
+  }
+}
